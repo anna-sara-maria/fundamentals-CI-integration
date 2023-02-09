@@ -43,6 +43,9 @@ def notify():
 
 def send_email(receiver_email, message):
 	sender_email = "continuousintegration2023@gmail.com"
+	# the password will be integrated into the code
+	# but not on github
+	password = input(str("please enter your password : ")) 
 	simple_email_context = ssl.create_default_context()
 	smtp_port = 587			# Standard secure SMTP port
 	smtp_server = "smtp.gmail.com"  # Google SMTP Server
@@ -50,7 +53,7 @@ def send_email(receiver_email, message):
 	try:
 		server = smtplib.SMTP(smtp_server, smtp_port)
 		server.starttls(context=simple_email_context)
-		server.login(sender_email, "bmvk xgju anqh kloq")#password) #"bengbeng%ED")
+		server.login(sender_email, password)
 		server.sendmail(sender_email, receiver_email, message) # Sends email
 		print("Email has been sent to", receiver_email)
 
