@@ -5,6 +5,7 @@ import os
 import config
 import tempfile
 import json
+from subprocess import run
 
 
 def create_temp_path():
@@ -77,6 +78,9 @@ def save_results():
     # date, branch, commit-id
     # build: no ok
     # error message?        #post to api.git (commit status)
+
+def create_directory(body, results):
+    run(['save_results.sh', config.results_path, body["branch"], commitid, body["date"], body["pusher_name"], body["pusher_email"], results])
 
 
 def restore():
