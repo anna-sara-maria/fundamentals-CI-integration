@@ -4,16 +4,11 @@ import git
 import os
 import tempfile
 import json
-<<<<<<< HEAD
-from subprocess import run
-
-=======
 import config
 from datetime import datetime
 import requests
 import unittest
 import subprocess
->>>>>>> main
 
 def create_temp_path():
 	temp_dir = tempfile.TemporaryDirectory()
@@ -139,12 +134,9 @@ def save_results(body_data, build_res, test_res, temp_path):
 
     return out
 
-
-
-
-def create_directory(body, commitid, results):
-    run(['save_results.sh', config.results_path, body["branch"], commitid, body["date"], body["pusher_name"], body["pusher_email"], results])
-
+def create_directory(body, temp_path, results):
+    commitid = temp_path.tree().commitid
+    subprocess.run(['save_results.sh', config.results_path, body["branch"], commitid, body["date"], body["pusher_name"], body["pusher_email"], results])
 
 def restore():
     """
@@ -153,22 +145,11 @@ def restore():
     print()
     # deletes the cloned repo and compiled code in preparation for next webhook
 
-
-def notify():
+def send_email(message):
     """
-    TBD
+    Sends an email with information about the commit and the test results
     """
-    print()
-    # when code is received
-    #	send emails to everyone to tell them code was recieved
-    # then tests are done
-    # test results are sent to ... everyone? or just the person who sent the code?
-
-
-def send_email(receiver_email, message):
-    """
-    Sends an email with the test results
-    """
+    receiver_email = "gustawsi@ug.kth.se,adriankv@ug.kth.se"
     sender_email = "continuousintegration2023@gmail.com"
     # the password will be integrated into the code but not here on github :)
     password = input(str("please enter your password : "))
