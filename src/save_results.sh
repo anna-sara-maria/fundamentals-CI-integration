@@ -23,3 +23,9 @@ summarystring="${date}: branch: ${branch}\tpusher: ${pusher_name}\tcommitid: ${c
 echo -e ${summarystring} >> ${path}/summary.txt
 
 echo -e ${results} > ${commitpath}/results.txt
+
+#Add versions used
+echo -e "\nVersions used:\n" >> ${commitpath}/results.txt
+python3 -V >> ${commitpath}/results.txt
+pip freeze | grep gitdb >> ${commitpath}/results.txt
+pip freeze | grep GitPython >> ${commitpath}/results.txt
