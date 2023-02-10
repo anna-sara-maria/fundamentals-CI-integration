@@ -25,11 +25,11 @@ ngrok http 8011
 ### Adam Melander (adrelix / adammel) 
 Post request handling  
 
-Pulling git repositories
+Pulling git repositories 
 
 Flake8 linting of repositories  
  
-### Anna Kristiansson (anna-sara-maria / annakris) 
+### Anna Kristiansson (anna-sara-maria / annakris)  
   
 Notification 
 
