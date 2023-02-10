@@ -19,7 +19,7 @@ fi
 commitpath=${path}/${branch}/${commitid}
 mkdir ${commitpath}
 
-summarystring="${date}: branch:   ${branch}     pusher: ${pusher_name}  commitid: ${commitid} \n url: ${branch}/${commitid} \n"
-echo ${summarystring} >> ${path}/summary.txt
+summarystring="${date}: branch:   ${branch}     pusher: ${pusher_name}  commitid: ${commitid} \nurl: ${branch}/${commitid} \n"
+echo -e ${summarystring} >> ${path}/summary.txt
 
-#echo ${results} > ${commitpath}/results.txt
+echo -e ${results} > ${commitpath}/results.txt
