@@ -22,7 +22,7 @@ ngrok http 8011
  
 ## Statement of contributions 
 
-### Adam Melander (adrelix / adammel)
+### Adam Melander (adrelix / adammel) 
 Post request handling  
 
 Pulling git repositories
