@@ -31,7 +31,7 @@ Flake8 linting of repositories
 
 ### Anna Kristiansson (anna-sara-maria / annakris) 
  
-Notification
+Notification 
 
 ### Adrian Valdani (adde300 / adriankv)
 save_results function
