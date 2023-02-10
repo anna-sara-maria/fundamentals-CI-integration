@@ -40,6 +40,8 @@ class Server(BaseHTTPRequestHandler):
         #check if build suceeded - yes, continue with test, else skip to save results
         test_res = server_funcs.test(temp_path)
         out = server_funcs.save_results(body_data, build_res, test_res, temp_path)
+        print(out) # Out should be input for notify();
+        server_funcs.create_directory(body_data, out)
         # send information about commit & test result to recipients on email 
         server_funcs.send_email(out)
 

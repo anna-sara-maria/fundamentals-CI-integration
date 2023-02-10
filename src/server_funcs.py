@@ -133,6 +133,15 @@ def save_results(body_data, build_res, test_res, temp_path):
 
     return out
 
+def create_directory(body, results):
+    """
+    Runs shell script to create directories and files to save results of build
+    
+    :param body: JSON format HTTP Post data
+    :param results: Formatted string containing results of build
+    """
+
+    subprocess.run(['save_results.sh', config.results_path, body["branch"], body["last_commit_id"], body["date"], body["pusher_name"], body["pusher_email"], results])
 
 def send_email(message):
     """
