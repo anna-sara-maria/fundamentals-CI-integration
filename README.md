@@ -14,11 +14,11 @@ Limitations: liability and warranty.
 ```
 python3 src/server.py http
 ```
-#### Start ngrok on the same port (8011) connection:
+#### Start ngrok on the same port (8011) connection: 
 ```
 ngrok http 8011
 ```
-(Make sure the webhook in the github repository has the ngrok url)
+(Make sure the webhook in the github repository has the ngrok url) 
 
 ## Statement of contributions 
 
