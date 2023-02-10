@@ -28,7 +28,7 @@ Post request handling
 Pulling git repositories
 
 Flake8 linting of repositories  
-
+ 
 ### Anna Kristiansson (anna-sara-maria / annakris) 
   
 Notification 
