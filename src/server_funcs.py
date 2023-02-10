@@ -79,7 +79,7 @@ def save_results():
     # build: no ok
     # error message?        #post to api.git (commit status)
 
-def create_directory(body, results):
+def create_directory(body, commitid, results):
     run(['save_results.sh', config.results_path, body["branch"], commitid, body["date"], body["pusher_name"], body["pusher_email"], results])
 
 
