@@ -14,7 +14,7 @@ Limitations: liability and warranty.
 ```  
 python3 src/server.py http
 ``` 
-#### Start ngrok on the same port (8011) connection: 
+#### Start ngrok on the same port (8011) connection:  
 ```
 ngrok http 8011 
 ```  
