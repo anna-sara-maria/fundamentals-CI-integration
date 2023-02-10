@@ -7,11 +7,11 @@ pusher_name=$5
 pusher_email=$6
 results=$7
 
-if [[ ! -e ${path}/summary.txt ]]; then
+if [[ ! -f ${path}/summary.txt ]]; then
     touch ${path}/summary.txt
 fi
 
-if [[ ! -e ${path}/${branch} ]]; then
+if [[ ! -d ${path}/${branch} ]]; then
     mkdir ${path}/${branch}
 fi
 
