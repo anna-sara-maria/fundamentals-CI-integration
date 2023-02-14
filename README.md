@@ -9,7 +9,7 @@ Permissions: private and commercial use, modification, distribution.
 Conditions: license and copyright notice.
 Limitations: liability and warranty.  
  
-## Operate the program
+## Operate the program 
 #### Run server.py with: 
 ```    
 python3 src/server.py http
