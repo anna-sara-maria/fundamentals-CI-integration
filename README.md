@@ -5,7 +5,7 @@ Git repository for Lab 2 Continuous Integration (Fundamentals of Software Engine
 This repository contains a continuous integration project that can be connected to different github webhooks to perform automatic tests on newly pushed  changes. The result is then e-mailed to the person pushing the changes.   
 
 ## Licence
-Permissions: private and commercial use, modification, distribution.
+Permissions: private and commercial use, modification, distri bution.
 Conditions: license and copyright notice.
 Limitations: liability and warranty.  
   
