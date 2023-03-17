@@ -8,7 +8,10 @@ This repository contains a continuous integration project that can be connected 
 Permissions: private and commercial use, modification, distribution.
 Conditions: license and copyright notice.
 Limitations: liability and warranty. 
- 
+
+## How it works
+The project is structured into a src and a test folder. All server code is in the src folder. All finshed code and documentation is found in the main branch and the assessment branch is used for testing purposes in order to avoid dummy commits in the main branch history. The server assumes a given project is written in Python. No compilation checking is thus done, however a linter is run before test cases are executed. The server will search for test cases in test/test_test.py and run them accordingly.
+
 ## Operate the program
 #### Run server.py with: 
 ```
@@ -40,6 +43,8 @@ save_results function
 server test functions 
 
 creation of urls/saving of info (not merged in the end - prototype in create_urls branch)
+
+fix bug with server running wrong test cases
 
 ### Levi Leyh (levi-tating)
 test function
