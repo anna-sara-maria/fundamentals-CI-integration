@@ -42,7 +42,7 @@ Flake8 linting of repositories
 Notification
 
 ### Adrian Valdani (adde300 / adriankv)
-save_results function
+Wrote the save_results function, formatting information from relevant commit into a readable string.
 
 ### Gustaw Siedlarski (gustawsi)
 server test functions 
