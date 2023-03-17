@@ -45,11 +45,7 @@ Notification
 Wrote the save_results function, formatting information from relevant commit into a readable string.
 
 ### Gustaw Siedlarski (gustawsi)
-server test functions 
-
-creation of urls/saving of info (not merged in the end - prototype in create_urls branch)
-
-fix bug with server running wrong test cases
+Wrote initial server test functions and creation of urls/saving of info, the latter of which was not merged in the end (the prototype can be found in the create_urls branch) Fixed the bug which made the server only ever run the test cases from the first POST-request received.
 
 ### Levi Leyh (levi-tating)
-test function
+Wrote `test` in `src/server_funcs.py` which runs the test cases found in `test/test_test.py`
