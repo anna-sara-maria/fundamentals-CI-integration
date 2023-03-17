@@ -31,11 +31,7 @@ ngrok http 8011
 ## Statement of contributions 
 
 ### Adam Melander (adrelix / adammel)
-Post request handling 
-
-Pulling git repositories
-
-Flake8 linting of repositories
+Wrote the initial POST-request handling, pulling of git repositories and Flake8 linting.
 
 ### Anna Kristiansson (anna-sara-maria / annakris) 
 
